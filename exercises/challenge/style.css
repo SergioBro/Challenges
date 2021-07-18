@@ -1,0 +1,93 @@
+body {
+    font-family: 'Karla', serif;
+    font-size: 16px;
+    background-color: #E6ECEFFF;
+}
+h2 {
+    color: #E6ECEFFF;
+}
+h3{
+    color: #E6ECEFFF;
+
+}
+span {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 5px;
+}
+button {
+    width: 100%;
+    background-color: #c1e809;
+    padding: 15px 40px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: #E6ECEFFF;
+    color: #30C7C3FF;
+}
+p {
+    color: #E6ECEFFF;
+    line-height: 1.75;
+}
+.containerFluid {
+    width: 80%;
+    margin: 40px auto;
+}
+.container {
+    margin: 0 auto;
+}
+.details {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.join {
+    background-color: #fff;
+}
+.join h1 {
+    color: #30C7C3FF;
+    font-size: 25px;
+}
+.join h3 {
+    color: #CDF50BFF;
+    font-size: 15px;
+}
+.join p {
+    color: #929CACFF;
+    line-height: 1.75;
+}
+.subscribe {
+    background-color: #30C7C3FF;
+}
+.whyUs {
+    background-color: #0DC2BE8C;
+}
+
+@media screen and (min-width: 1000px){
+    .containerFluid {
+        width: 60%;
+        margin: 40px auto;
+    }
+    .details {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .flex {
+        display: flex;
+    }
+    .subscribe{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .whyUs {
+        width: 50%;
+        margin: 0 auto;
+    }
+    button {
+        margin-top: 30px;
+    }
+}
