@@ -82,22 +82,22 @@ function calculator() {
   }
 }
 
-function turnErrorVisible (element, error){
+function turnErrorVisible(element, error) {
   element.classList.add("error");
   error.style.visibility = "visible";
 }
 
-function removeAndHideError (element, error){
+function removeAndHideError(element, error) {
   element.classList.remove("error");
   error.style.visibility = "hidden";
 }
 
-function unselectButton(button){
+function unselectButton(button) {
   button.classList.remove("selected");
   button.classList.add("unselected");
 }
 
-function selectButton(button){
+function selectButton(button) {
   button.classList.remove("unselected");
   button.classList.add("selected");
 }
