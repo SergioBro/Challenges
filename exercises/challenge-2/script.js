@@ -2,10 +2,10 @@ const amount = document.querySelector(".amount");
 const tipButton = document.querySelectorAll(".tip");
 const custom = document.querySelector(".custom");
 const people = document.querySelector(".people");
-const perPerson = document.querySelector(".tip-amount-value");
-const total = document.querySelector(".total-value");
-const amountError = document.querySelector(".amount-error");
-const peopleError = document.querySelector(".people-error");
+const perPerson = document.querySelector(".tip-amount__value");
+const total = document.querySelector(".total__value");
+const amountError = document.querySelector(".amount--error");
+const peopleError = document.querySelector(".people--error");
 const reset = document.querySelector(".reset");
 
 resetValues()

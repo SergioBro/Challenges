@@ -32,12 +32,12 @@ button {
   outline: none;
 }
 
-.error-message {
+.error--message {
   color: red;
   font-weight: 700;
 }
 
-.amount-error, .people-error {
+.amount--error, .people--error {
   visibility: hidden;
 }
 
@@ -111,14 +111,14 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   font-weight: 700;
   background: var(--VeryDarkCyan);
   color: white;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .tip:active {
   transform: scale(0.9);
 }
 
-.unselected:hover {
+.tip__unselected:hover {
   background: var(--StrongCyan);
   color: var(--VeryDarkCyan);
 }

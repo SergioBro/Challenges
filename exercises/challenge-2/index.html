@@ -21,7 +21,7 @@
   <div class="input">
 
     <h4>Bill</h4>
-    <h4 class="amount-error error-message">Can't be less than Zero</h4>
+    <h4 class="amount--error error--message">Can't be less than Zero</h4>
 
     <input type="number" class="amount" name='amount' min='0' placeholder="00.00">
 
@@ -29,18 +29,18 @@
 
     <div class="tips">
 
-      <button type="number" class="tip unselected" name='tip' value=5>5%</button>
-      <button type="number" class="tip unselected" name='tip' value=10>10%</button>
-      <button type="number" class="tip unselected" name='tip' value=15>15%</button>
-      <button type="number" class="tip unselected" name='tip' value=25>25%</button>
-      <button type="number" class="tip unselected" name='tip' value=30>30%</button>
+      <button type="number" class="tip tip__unselected" name='tip' value=5>5%</button>
+      <button type="number" class="tip tip__unselected" name='tip' value=10>10%</button>
+      <button type="number" class="tip tip__unselected" name='tip' value=15>15%</button>
+      <button type="number" class="tip tip__unselected" name='tip' value=25>25%</button>
+      <button type="number" class="tip tip__unselected" name='tip' value=30>30%</button>
 
       <input type="number" name="tip" class="custom" min="0" placeholder="Custom">
 
     </div>
 
     <h4>Number of People</h4>
-    <h4 class="people-error error-message">Can't be Zero</h4>
+    <h4 class="people--error error--message">Can't be Zero</h4>
 
     <input type="number" class="people" name="people" value=1 min="1" placeholder="1">
 
@@ -49,19 +49,19 @@
   <div class="result">
 
     <div class="tip-amount">
-      <div class="text">
+      <div class="text tip-amount__text">
         <h4>Tip Amount</h4>
         <h5>/Person</h5>
       </div>
-      <div class="value tip-amount-value">$0.00</div>
+      <div class="value tip-amount__value">$0.00</div>
     </div>
 
     <div class="total">
-      <div class="text">
+      <div class="text total__text">
         <h4>Total</h4>
         <h5>/Person</h5>
       </div>
-      <div class="value total-value">$0.00</div>
+      <div class="value total__value">$0.00</div>
     </div>
 
     <button class="reset">Reset</button>
