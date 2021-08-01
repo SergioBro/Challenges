@@ -1,12 +1,12 @@
-const amount = document.getElementById(".amount");
-const tipButton = document.getElementById("tip");
-const custom = document.getElementById("custom");
-const people = document.getElementById("people");
-const perPerson = document.getElementById("tip-amount-value");
-const total = document.getElementById("total-value");
-const amountError = document.getElementById("amount-error");
-const peopleError = document.getElementById("people-error");
-const reset = document.getElementById("reset");
+const amount = document.querySelector(".amount");
+const tipButton = document.querySelectorAll(".tip");
+const custom = document.querySelector(".custom");
+const people = document.querySelector(".people");
+const perPerson = document.querySelector(".tip-amount-value");
+const total = document.querySelector(".total-value");
+const amountError = document.querySelector(".amount-error");
+const peopleError = document.querySelector(".people-error");
+const reset = document.querySelector(".reset");
 
 resetValues()
 let tip = 0, amt = 0, ppl = 1;
@@ -67,9 +67,9 @@ function resetValues() {
   perPerson.innerHTML = "$0.00";
   total.innerHTML = "$0.00";
 
-  tipButton.forEach(e => {
-    e.classList.remove("selected");
-    e.classList.add("unselected");
+  tipButton.forEach(click => {
+    click.classList.remove("selected");
+    click.classList.add("unselected");
   })
 }
 
