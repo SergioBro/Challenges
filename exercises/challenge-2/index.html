@@ -29,20 +29,33 @@
 
     <div class="tips">
 
-      <button type="number" class="tip tip__unselected" name='tip' value=5>5%</button>
-      <button type="number" class="tip tip__unselected" name='tip' value=10>10%</button>
-      <button type="number" class="tip tip__unselected" name='tip' value=15>15%</button>
-      <button type="number" class="tip tip__unselected" name='tip' value=25>25%</button>
-      <button type="number" class="tip tip__unselected" name='tip' value=30>30%</button>
+      <button class="tip tip__unselected borderless-button" name='tip' value=5>
+        <span class="tip__text">5%</span>
+      </button>
+      <button class="tip tip__unselected borderless-button" name='tip' value=10>
+        <span class="tip__text">10%</span>
+      </button>
+      <button class="tip tip__unselected borderless-button" name='tip' value=15>
+        <span class="tip__text">15%</span>
+      </button>
+      <button class="tip tip__unselected borderless-button" name='tip' value=25>
+        <span class="tip__text">25%</span>
+      </button>
+      <button class="tip tip__unselected borderless-button" name='tip' value=30>
+        <span class="tip__text">30%</span>
+      </button>
 
-      <input type="number" name="tip" class="custom__input" min="0" placeholder="Custom">
+
+      <input type="number" class="input-2 input-2--text-centered" name='tip' min='0' placeholder="Custom" id="custom-tip-input">
 
     </div>
 
-    <h4>Number of People</h4>
-    <h4 class="people__error error__message">Can't be Zero</h4>
+    <h4 class="input__people-title">Number of People</h4>
+    <h4 class="input__people-error error">Can't be Zero</h4>
 
-    <input type="number" class="people__input" name="people" value=1 min="1" placeholder="1">
+
+    <input type="number" class="input-2 input-2--people-background " name='people' value="1" min='1' placeholder="1" id="people-input">
+
 
   </div>
 

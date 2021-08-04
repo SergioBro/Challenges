@@ -23,35 +23,6 @@ header {
   justify-content: center;
 }
 
-h4, h5 {
-  color: var(--DarkGrayishCyan2);
-}
-
-button {
-  border: none;
-  outline: none;
-}
-
-.error__message {
-  color: red;
-  font-weight: 700;
-}
-
-.amount__error, .people__error {
-  visibility: hidden;
-}
-
-.amount__input {
-
-  background-image: url('images/icon-dollar.svg');
-  background-repeat: no-repeat;
-}
-
-.people__input {
-  background-image: url('images/icon-person.svg');
-  background-repeat: no-repeat;
-}
-
 .calculator {
   background-color: white;
   border-radius: 16px;
@@ -64,38 +35,29 @@ button {
   margin-bottom: 16px;
 }
 
-.amount__input:focus, .people__input:focus, .custom__input:focus {
-  outline: 2px solid var(--StrongCyan);
+.input__tip-title {
+  color: var(--DarkGrayishCyan2);
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
-.error, .error:focus {
+.input__people-title {
+  color: var(--DarkGrayishCyan2);
+}
+
+.input-2--text-centered {
+  text-align: center;
+}
+
+.input-2--error {
   outline: 2px solid red;
   background-color: rgba(255, 0, 0, 0.2);
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Space Mono', monospace;
-}
-
-input {
-  width: 100%;
-  height: 50px;
-  background: var(--LightGrayishCyan2) 20px center;
-  background-size: 16px;
-  color: var(--StrongCyan);
-  font-size: 24px;
+.error {
+  visibility: hidden;
+  color: red;
   font-weight: 700;
-  text-align: right;
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
 }
 
 .tips {
@@ -143,11 +105,21 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   font-weight: 700;
 }
 
-.custom__input {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--VeryDarkCyan);
+.tip--reset-button {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: var(--StrongCyan);
+  color: var(--VeryDarkCyan);
+  border-radius: 10px;
+  margin-top: auto;
+}
+
+.tip--reset-button:active {
+  transform: scale(0.9);
 }
 
 .result {

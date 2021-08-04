@@ -1,12 +1,12 @@
-const amountInput = document.querySelector(".amount__input");
-const tipButton = document.querySelectorAll(".tip");
-const customInput = document.querySelector(".custom__input");
-const peopleInput = document.querySelector(".people__input");
-const perPerson = document.querySelector(".tip-amount__value");
-const total = document.querySelector(".total__value");
-const amountError = document.querySelector(".amount__error");
-const peopleError = document.querySelector(".people__error");
-const reset = document.querySelector(".reset");
+const amountInput = document.getElementById("amount-input");
+const tipButtons = document.querySelectorAll(".tip");
+const customInput = document.getElementById("custom-tip-input");
+const peopleInput = document.getElementById("people-input");
+const perPerson = document.getElementById("total-tip-amount");
+const total = document.getElementById("total-amount");
+const amountError = document.querySelector(".input__amount-error");
+const peopleError = document.querySelector(".input__people-error");
+const reset = document.querySelector(".tip--reset-button");
 
 resetValues()
 let tip = 0, amt = 0, ppl = 1;
