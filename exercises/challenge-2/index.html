@@ -19,13 +19,10 @@
 <div class='calculator'>
 
   <div class="input">
-
-    <h4>Bill</h4>
-    <h4 class="amount__error error__message">Can't be less than Zero</h4>
-
-    <input type="number" class="amount__input" name='amount' min='0' placeholder="00.00">
-
-    <h4>Select Tip %</h4>
+    <h4 class="input__title">Bill</h4>
+    <h4 class="input__amount-error error">Can't be less than Zero</h4>
+    <input type="number" class="input-2 input-2--dollar-background" name='amount' min='0' placeholder="00.00" id="amount-input">
+    <h4 class="input__tip-title">Select Tip %</h4>
 
     <div class="tips">
 
@@ -62,22 +59,24 @@
   <div class="result">
 
     <div class="tip-amount">
-      <div class="text tip-amount__text">
-        <h4>Tip Amount</h4>
-        <h5>/Person</h5>
+      <div class="tip-amount__text">
+        <h4 class="tip-amount__title">Tip Amount</h4>
+        <h5 class="tip-amount__subtitle">/ person</h5>
       </div>
-      <div class="value tip-amount__value">$0.00</div>
+      <div class="tip-amount__value" id="total-tip-amount">$0.00</div>
     </div>
 
-    <div class="total">
-      <div class="text total__text">
-        <h4>Total</h4>
-        <h5>/Person</h5>
+    <div class="tip-amount">
+      <div class="tip-amount__text">
+        <h4 class="tip-amount__title">Total</h4>
+        <h5 class="tip-amount__subtitle">/ person</h5>
       </div>
-      <div class="value total__value">$0.00</div>
+      <div class="tip-amount__value" id="total-amount">$0.00</div>
     </div>
 
-    <button class="reset">Reset</button>
+    <button class="tip tip--reset-button borderless-button">
+      <span class="tip__text ">Reset</span>
+    </button>
 
   </div>
 

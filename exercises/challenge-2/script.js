@@ -11,13 +11,13 @@ const reset = document.querySelector(".tip--reset-button");
 resetValues()
 let tip = 0, amt = 0, ppl = 1;
 
-tipButton.forEach(button => {
+tipButtons.forEach(button => {
   button.addEventListener("click", () => {
     if (button.classList.contains("selected")) {
       tip = 0;
       unselectButton(button)
     } else {
-      tipButton.forEach(click => {
+      tipButtons.forEach(click => {
         click.classList.remove("selected");
       })
       tip = button.value;
@@ -30,7 +30,7 @@ tipButton.forEach(button => {
 
 customInput.addEventListener("input", () => {
   if (customInput.value >= 0) {
-    tipButton.forEach(click => {
+    tipButtons.forEach(click => {
       click.classList.remove("selected");
     })
     tip = customInput.value;
@@ -67,7 +67,7 @@ function resetValues() {
   perPerson.innerHTML = "$0.00";
   total.innerHTML = "$0.00";
 
-  tipButton.forEach(click => {
+  tipButtons.forEach(click => {
     click.classList.remove("selected");
     click.classList.add("unselected");
   })
@@ -83,12 +83,12 @@ function calculator() {
 }
 
 function turnErrorVisible(element, error) {
-  element.classList.add("error");
+  element.classList.add("input-2--error");
   error.style.visibility = "visible";
 }
 
 function removeAndHideError(element, error) {
-  element.classList.remove("error");
+  element.classList.remove("input-2--error");
   error.style.visibility = "hidden";
 }
 
