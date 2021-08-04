@@ -1,11 +1,11 @@
-const amount = document.querySelector(".amount");
+const amountInput = document.querySelector(".amount__input");
 const tipButton = document.querySelectorAll(".tip");
-const custom = document.querySelector(".custom");
-const people = document.querySelector(".people");
+const customInput = document.querySelector(".custom__input");
+const peopleInput = document.querySelector(".people__input");
 const perPerson = document.querySelector(".tip-amount__value");
 const total = document.querySelector(".total__value");
-const amountError = document.querySelector(".amount--error");
-const peopleError = document.querySelector(".people--error");
+const amountError = document.querySelector(".amount__error");
+const peopleError = document.querySelector(".people__error");
 const reset = document.querySelector(".reset");
 
 resetValues()
@@ -23,47 +23,47 @@ tipButton.forEach(button => {
       tip = button.value;
       selectButton(button)
     }
-    custom.value = "";
+    customInput.value = "";
     calculator();
   })
 });
 
-custom.addEventListener("input", () => {
-  if (custom.value >= 0) {
+customInput.addEventListener("input", () => {
+  if (customInput.value >= 0) {
     tipButton.forEach(click => {
       click.classList.remove("selected");
     })
-    tip = custom.value;
+    tip = customInput.value;
     calculator();
   }
 })
 
-amount.addEventListener("input", () => {
-  amt = Number(amount.value);
+amountInput.addEventListener("input", () => {
+  amt = Number(amountInput.value);
   if (amt <= 0 && amt !== "") {
-    turnErrorVisible(amount, amountError)
+    turnErrorVisible(amountInput, amountError)
     return;
   }
-  removeAndHideError(amount, amountError)
+  removeAndHideError(amountInput, amountError)
   calculator();
 })
 
-people.addEventListener("input", () => {
-  ppl = people.value;
+peopleInput.addEventListener("input", () => {
+  ppl = peopleInput.value;
   if (ppl <= 0 && ppl !== "") {
-    turnErrorVisible(people, peopleError)
+    turnErrorVisible(peopleInput, peopleError)
     return;
   }
-  removeAndHideError(people, peopleError)
+  removeAndHideError(peopleInput, peopleError)
   calculator();
 })
 
 reset.addEventListener("click", resetValues);
 
 function resetValues() {
-  amount.value = "";
-  people.value = "1";
-  custom.value = "";
+  amountInput.value = "";
+  peopleInput.value = "1";
+  customInput.value = "";
   perPerson.innerHTML = "$0.00";
   total.innerHTML = "$0.00";
 

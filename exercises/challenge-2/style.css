@@ -32,22 +32,22 @@ button {
   outline: none;
 }
 
-.error--message {
+.error__message {
   color: red;
   font-weight: 700;
 }
 
-.amount--error, .people--error {
+.amount__error, .people__error {
   visibility: hidden;
 }
 
-.amount {
+.amount__input {
 
   background-image: url('images/icon-dollar.svg');
   background-repeat: no-repeat;
 }
 
-.people {
+.people__input {
   background-image: url('images/icon-person.svg');
   background-repeat: no-repeat;
 }
@@ -64,7 +64,7 @@ button {
   margin-bottom: 16px;
 }
 
-.amount:focus, .people:focus, .custom:focus {
+.amount__input:focus, .people__input:focus, .custom__input:focus {
   outline: 2px solid var(--StrongCyan);
 }
 
@@ -143,7 +143,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   font-weight: 700;
 }
 
-.custom {
+.custom__input {
   font-size: 24px;
   font-weight: 700;
   color: var(--VeryDarkCyan);
